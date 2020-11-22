@@ -1,0 +1,35 @@
+ .profile{
+  display:flex;
+   background-color: cadetblue;
+   width: 100%;
+   border: 7px solid blue;
+   border-color: black;
+   padding: 1%;
+   margin: 1%;
+  }
+  .profile>div{
+   text-align: right;
+   background-color: beige;
+   padding:1%;
+   margin: 3%;
+   width: 40%;
+   height:70%;
+   border : 2px solid maroon;
+   text-align: left;
+   box-shadow: 10px 20px 30px 10px;
+  }
+  a{
+  	text-decoration:none;
+  }
+  img{
+  	border:2px solid black;
+  }
+  button{
+  	font-size:130%;
+  	width:40%;
+  	height:20%;
+  	margin:1%;
+  	background-color: burlywood;
+  	color:black;
+  	text-align: center;
+  }
