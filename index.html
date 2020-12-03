@@ -4,6 +4,62 @@
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="resume.css">
 	<title>Resume task</title>
+  <style>
+  @media only screen and (min-width:360px) and (max-width: 640px){
+   .profile,.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+   }
+   .profile>div{
+    width: 90%;
+
+   }
+   }
+
+/* Tab View*/
+@media only screen and (min-width:481px) and (max-width: 768px){
+ body{
+  color: blue;
+ }
+   .profile{
+
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    /*flex-wrap: wrap;*/
+   }
+   .profile>div{
+    width: 90%;
+
+   }
+    .copy{
+    max-width: 100%;
+   }
+   }
+
+@media only screen and (min-width:769px) and (max-width: 1024px){
+ body{
+  color: blue;
+ }
+   .profile{
+
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    /*flex-wrap: wrap;*/
+   }
+   .profile>div{
+    width: 90%;
+    background-color: yellow;
+
+   }
+      .copy{
+    max-width: 100%;
+   }
+   }
+
+ </style>
 </head>
 <body>
 	<div class="profile">
