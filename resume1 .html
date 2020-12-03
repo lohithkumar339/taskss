@@ -5,33 +5,95 @@
 	<link rel="icon" href="photo.jpg">
 	<title>RESUME Semantic</title>
 <style>
-aside {
+	.total{
+		display:flex;
+		flex direction :row;
+		border:5px solid black;
+		padding:10px;
+	}
+.body1 {
 	border:5px solid black;
   width: 20%;
   height:100%;
   padding-left: 15px;
   padding-top: 10px;
   margin-right:15px;
-  float: left;
+  /*float: left;*/
   font-style: italic;
   background-color: lightgray;
 }
-.body{
+.body2{
 	border:5px solid black;
-	width:60%;
-	float:left;
+	width:70%;
+	/*float:left;*/
    padding-left: 1px;
 /*  font-style: italic;*/
   background-color:cornsilk;
   padding-right: 1px;
 }
-@media only screen and(min-width:320px) and (max-width: 480px){
-  body{background-color : blue; }
-}
+@media only screen and (min-width:320px) and (max-width: 480px){
+   .total{
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+    padding:2px;
+   }
+   .body1{
+    width: 70%;
+   }
+   .body2{
+   	/*margin-right:2px;*/
+     width:80%;
+   }
+   table{
+   	width:1%;
+   }
+   }
+@media only screen and (min-width:481px) and (max-width: 768px){
+ body{
+  /*color: blue;*/
+ }
+   .total{
+
+    display: flex;
+    flex-direction: row;
+    max-width: 15s0%;
+    /*flex-wrap: wrap;*/
+   }
+   .body1{
+    width: 70%;
+    height:200%;
+   }
+   .body2{
+   	/*margin-right:2px;*/
+     width:80%;
+   }
+   table{
+   	width:1%;
+   }
+   }
+
+@media only screen and (min-width:769px) and (max-width: 1024px){
+ body{
+  /*color: blue;*/
+ }
+   .total{
+    
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    /*flex-wrap: wrap;*/
+   }
+  
+   }
+   }
+
+ </style>
 </style>
 </head>
 <body>
-	<aside>
+	<aside class="total">
+	<aside class="body1">
 		<img src="photo.jpg" width="30%" height="30%" alt="another">
 		<h1  style="color:maroon">Harhith prasad</h1>
         <h5>EMAIL : harshithprasad65@gmail.com</h5>
@@ -53,8 +115,8 @@ aside {
         </section>
             <br><br><br><br><br><br><br><br><br><br><br><br><br>
     </aside>
-  <!-- <aside class="body"> -->
-<section class="body">
+  <aside class="body2">
+<!-- <section class="body"> -->
    	<section>
    		<h2>Career objective:</h2><p><ul type ="square"> <li> To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.</li>
 <li> Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.</li>
@@ -63,7 +125,7 @@ aside {
 </section>
 <section>
 	<h2> Educational details </h2>
-	<table border="5">
+	<table border="1">
 		<tr>
 			<th>Qualification</th>
 			<th>Stream</th>
@@ -115,6 +177,7 @@ aside {
 
    	</ul>
    	</section><br>
-   </section>
+   </aside>
+</aside>
 </body>
 </html>
